@@ -1,0 +1,31 @@
+# CMake generation dependency list for this directory.
+E:/迅雷下载/caffe/mini-caffe-example-master/CMakeLists.txt
+D:/bin/caffeEx/CMakeFiles/3.2.3/CMakeSystem.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInitialize.cmake
+D:/bin/caffeEx/CMakeFiles/3.2.3/CMakeCCompiler.cmake
+D:/bin/caffeEx/CMakeFiles/3.2.3/CMakeCXXCompiler.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeGenericSystem.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/WindowsPaths.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-C.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+D:/bin/caffeEx/CMakeFiles/3.2.3/CMakeRCCompiler.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeRCInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCXXInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Compiler/MSVC-CXX.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+F:/tools/Opencv3.0/opencv/build/OpenCVConfig-version.cmake
+F:/tools/Opencv3.0/opencv/build/OpenCVConfig.cmake
+F:/tools/Opencv3.0/opencv/build/x86/vc12/staticlib/OpenCVConfig.cmake
+F:/tools/Opencv3.0/opencv/build/x86/vc12/staticlib/OpenCVModules.cmake
+F:/tools/Opencv3.0/opencv/build/x86/vc12/staticlib/OpenCVModules-debug.cmake
+F:/tools/Opencv3.0/opencv/build/x86/vc12/staticlib/OpenCVModules-release.cmake
+E:/迅雷下载/caffe/mini-caffe-example-master/mini-caffe/mini-caffe.cmake
+F:/tools/Opencv3.0/opencv/build/OpenCVConfig-version.cmake
+F:/tools/Opencv3.0/opencv/build/OpenCVConfig.cmake
+F:/tools/Opencv3.0/opencv/build/x86/vc12/staticlib/OpenCVConfig.cmake

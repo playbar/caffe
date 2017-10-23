@@ -104,3 +104,7 @@ MANIFEST-*
 *.props
 *.opendb
 *.db
+caffeface/libcaffe.dir/Debug/
+caffeface/libcaffe.dir/Release/
+caffeface/ex.dir/Release/
+caffeface/ex.dir/Debug/

@@ -1,0 +1,23 @@
+本程序编译环境vs2013
+
+源代码 https://github.com/luoyetx/mini-caffe-example ，作者luoyetx
+
+我把整个依赖 boost,opencv,gflag,glog,protobuf整个打包，因此你可以直接编译，直接用vs2013打开ex.sln
+
+
+个人编译小总结：
+1 假若你搞1天没有搞定，请再搞一天
+2 环境  vs2013不要用之前的版本浪费浪费时间，因为有一部分c++11的特性在里面
+3 直接下载 https://github.com/luoyetx/mini-caffe-example，里面基本上有相关的依赖库
+  caffe gflag glog protobuf 要根据 作者的 example的目录进行放置
+   注意 千万 不要 把文件搞两分，任何相关代码，保留一份，不然问题出在哪，我们都不知道
+4 依赖库 boost_1_57_0直接从网上下载编译后的
+5 opencv 我建议用 opencv_world300.lib  opencv_ts300.lib（静态的我没有尝试）
+6 vs的 编译环境 我全部统一 采用 MD 的方式
+  c/c++---代码生成---运行库--多线程 dll；在线先用 release的 形式，以后 有机会再用debug吧
+7 当编译成功出现net 初始化失败的时候，请看作者关于 vs的 配置的截图
+8 假若 还没成功，希望你继续，假若你搞了两天还没成功，非常欢迎你的提问
+
+呵呵，还有在下 只是 编译，作者请看 源码地址 有小问题联系 jingkongxue@163.com
+
+

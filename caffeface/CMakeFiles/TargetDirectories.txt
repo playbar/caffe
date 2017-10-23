@@ -1,0 +1,4 @@
+D:/bin/caffeEx/CMakeFiles/ex.dir
+D:/bin/caffeEx/CMakeFiles/ALL_BUILD.dir
+D:/bin/caffeEx/CMakeFiles/ZERO_CHECK.dir
+D:/bin/caffeEx/CMakeFiles/libcaffe.dir
