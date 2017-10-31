@@ -66,12 +66,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="address.pb.cc" />
     <ClCompile Include="protobuftest.cpp" />
     <ClCompile Include="protobuftest_1.cpp" />
     <ClCompile Include="protocol.pb.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="address.pb.h" />
     <ClInclude Include="protocol.pb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="protoc\protocol.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(SolutionDir)\CommonSettings.targets" />
