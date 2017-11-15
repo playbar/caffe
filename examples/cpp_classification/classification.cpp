@@ -227,22 +227,24 @@ void Classifier::Preprocess(const cv::Mat& img,
 }
 
 int main(int argc, char** argv) {
-  if (argc != 6) {
-    std::cerr << "Usage: " << argv[0]
-              << " deploy.prototxt network.caffemodel"
-              << " mean.binaryproto labels.txt img.jpg" << std::endl;
-    return 1;
-  }
+  //if (argc != 6) {
+  //  std::cerr << "Usage: " << argv[0]
+  //            << " deploy.prototxt network.caffemodel"
+  //            << " mean.binaryproto labels.txt img.jpg" << std::endl;
+  //  return 1;
+  //}
 
   ::google::InitGoogleLogging(argv[0]);
 
-  string model_file   = argv[1];
-  string trained_file = argv[2];
-  string mean_file    = argv[3];
-  string label_file   = argv[4];
+  string model_file = "models/bvlc_reference_caffenet/deploy.prototxt";// argv[1];
+  string trained_file = "models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel";//argv[2];
+  //string model_file = "examples/mnist/lenet.prototxt";// argv[1];
+  //string trained_file = "examples/mnist/lenet_iter_10000.caffemodel";//argv[2];
+  string mean_file = "data/ilsvrc12/imagenet_mean.binaryproto";//argv[3];
+  string label_file = "data/ilsvrc12/synset_words.txt"; // argv[4];
   Classifier classifier(model_file, trained_file, mean_file, label_file);
 
-  string file = argv[5];
+  string file = "examples/images/cat.jpg";// argv[5];
 
   std::cout << "---------- Prediction for "
             << file << " ----------" << std::endl;

@@ -1,0 +1,16 @@
+person {
+  name: "name"
+  id: 1
+  email: "email"
+  phone {
+    number: "124556"
+    type: MOBILE
+  }
+  phone {
+    number: "23343"
+    type: HOME
+  }
+  phone {
+    number: "1232"
+  }
+}
