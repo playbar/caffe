@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="address.pb.cc" />
+    <ClCompile Include="pbdynamic_message.cpp" />
     <ClCompile Include="protobuftest.cpp" />
     <ClCompile Include="protobuftest_1.cpp" />
     <ClCompile Include="protocol.pb.cc" />
@@ -77,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="protoc\protocol.proto" />
+    <None Include="test.proto" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(SolutionDir)\CommonSettings.targets" />

@@ -244,4 +244,6 @@ int32_t main_2(int argc, char* argv[])
 	//prototest();
 	//writedata(argc, argv);
 	readdata(argc, argv);
+
+	return 0;
 }
