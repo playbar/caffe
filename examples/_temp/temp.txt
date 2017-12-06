@@ -1,0 +1,4 @@
+D:/github/caffe/examples/images/cat.jpg
+D:/github/caffe/examples/images/fish-bike.jpg
+D:/github/caffe/examples/images/cat_gray.jpg
+D:/github/caffe/examples/images/cat gray.jpg

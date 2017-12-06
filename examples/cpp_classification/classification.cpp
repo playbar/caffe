@@ -145,6 +145,8 @@ void Classifier::SetMean(const string& mean_file) {
    * filled with this value. */
   cv::Scalar channel_mean = cv::mean(mean);
   mean_ = cv::Mat(input_geometry_, mean.type(), channel_mean);
+  imshow("mean_", mean_);
+
 }
 
 std::vector<float> Classifier::Predict(const cv::Mat& img) {
@@ -238,10 +240,14 @@ int main(int argc, char** argv) {
 
   string model_file = "models/bvlc_reference_caffenet/deploy.prototxt";// argv[1];
   string trained_file = "models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel";//argv[2];
-  //string model_file = "examples/mnist/lenet.prototxt";// argv[1];
-  //string trained_file = "examples/mnist/lenet_iter_10000.caffemodel";//argv[2];
   string mean_file = "data/ilsvrc12/imagenet_mean.binaryproto";//argv[3];
   string label_file = "data/ilsvrc12/synset_words.txt"; // argv[4];
+
+  //string model_file = "examples/cifar10/cifar10_quick_solver.prototxt";// argv[1];
+  //string trained_file = "examples/cifar10/cifar10_quick_iter_4000.caffemodel";//argv[2];
+  //string mean_file = "examples/cifar10/mean.binaryproto";//argv[3];
+  //string label_file = "data/ilsvrc12/synset_words.txt"; // argv[4];
+ 
   Classifier classifier(model_file, trained_file, mean_file, label_file);
 
   string file = "examples/images/cat.jpg";// argv[5];

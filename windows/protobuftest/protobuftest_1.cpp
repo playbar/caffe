@@ -239,7 +239,7 @@ void prototest()
 	return;
 }
 
-int32_t main(int argc, char* argv[])
+int32_t main_2(int argc, char* argv[])
 {
 	//prototest();
 	//writedata(argc, argv);
