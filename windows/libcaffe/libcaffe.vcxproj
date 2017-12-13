@@ -360,6 +360,7 @@
     <CudaCompile Include="..\..\src\caffe\util\math_functions.cu" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\src\caffe\proto\caffe.proto" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

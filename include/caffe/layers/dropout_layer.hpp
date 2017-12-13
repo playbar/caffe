@@ -32,7 +32,9 @@ class DropoutLayer : public NeuronLayer<Dtype> {
    *     Sets the probability @f$ p @f$ that any given unit is dropped.
    */
   explicit DropoutLayer(const LayerParameter& param)
-      : NeuronLayer<Dtype>(param) {}
+      : NeuronLayer<Dtype>(param) {
+	  layer_name_ = typeid(this).name();
+  }
   virtual void LayerSetUp(const vector<Blob<Dtype>*>& bottom,
       const vector<Blob<Dtype>*>& top);
   virtual void Reshape(const vector<Blob<Dtype>*>& bottom,

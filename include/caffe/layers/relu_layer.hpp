@@ -25,7 +25,10 @@ class ReLULayer : public NeuronLayer<Dtype> {
    *     the value @f$ \nu @f$ by which negative values are multiplied.
    */
   explicit ReLULayer(const LayerParameter& param)
-      : NeuronLayer<Dtype>(param) {}
+      : NeuronLayer<Dtype>(param) 
+  {
+	  layer_name_ = typeid(this).name();
+  }
 
   virtual inline const char* type() const { return "ReLU"; }
 

@@ -850,5 +850,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="..\..\src\caffe\proto\caffe.proto">
+      <Filter>src\proto</Filter>
+    </None>
   </ItemGroup>
 </Project>

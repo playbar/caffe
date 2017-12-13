@@ -62,7 +62,9 @@ class ConvolutionLayer : public BaseConvolutionLayer<Dtype> {
    *    kernels + stream parallelism) engines.
    */
   explicit ConvolutionLayer(const LayerParameter& param)
-      : BaseConvolutionLayer<Dtype>(param) {}
+      : BaseConvolutionLayer<Dtype>(param) {
+	  layer_name_ = typeid(this).name();
+  }
 
   virtual inline const char* type() const { return "Convolution"; }
 

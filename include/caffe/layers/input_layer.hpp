@@ -20,6 +20,7 @@ class InputLayer : public Layer<Dtype> {
  public:
   explicit InputLayer(const LayerParameter& param) : Layer<Dtype>(param) 
   {
+	  layer_name_ = typeid(this).name();
 	  std::cout << "InputLayer";
   }
   virtual void LayerSetUp(const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top);
