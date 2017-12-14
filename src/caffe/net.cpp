@@ -34,6 +34,7 @@ Net<Dtype>::Net(const string& param_file, Phase phase,
     : root_net_(root_net) {
   NetParameter param;
   ReadNetParamsFromTextFileOrDie(param_file, &param);
+  int size = param.layer_size();
   // Set phase, stages and level
   param.mutable_state()->set_phase(phase);
   if (stages != NULL) {
