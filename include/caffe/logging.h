@@ -90,7 +90,7 @@ const int WARNING = -1;
 const int INFO    =  0;
 
 #ifdef _WIN32
-int gettimeofday(struct timeval *tp, void *tzp)
+inline int gettimeofday(struct timeval *tp, void *tzp)
 {
 	time_t clock;
 	struct tm tm;

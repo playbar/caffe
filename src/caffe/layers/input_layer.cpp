@@ -21,6 +21,20 @@ void InputLayer<Dtype>::LayerSetUp(const vector<Blob<Dtype>*>& bottom,
   }
 }
 
+template <typename Dtype>
+void InputLayer<Dtype>::Forward_cpu(const vector<Blob<Dtype>*>& bottom, const vector<Blob<Dtype>*>& top)
+{
+	LOG(INFO) << "InputLayer<Dtype>::Forward_cpu";
+}
+
+template <typename Dtype>
+void InputLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top, 
+	const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom)
+{
+	LOG(INFO) << "InputLayer<Dtype>::Backward_cpu";
+}
+
+
 INSTANTIATE_CLASS(InputLayer);
 REGISTER_LAYER_CLASS(Input);
 
