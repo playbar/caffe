@@ -227,22 +227,28 @@ void Classifier::Preprocess(const cv::Mat& img,
 }
 
 int main(int argc, char** argv) {
-  if (argc != 6) {
-    std::cerr << "Usage: " << argv[0]
-              << " deploy.prototxt network.caffemodel"
-              << " mean.binaryproto labels.txt img.jpg" << std::endl;
-    return 1;
-  }
+  //if (argc != 6) {
+  //  std::cerr << "Usage: " << argv[0]
+  //            << " deploy.prototxt network.caffemodel"
+  //            << " mean.binaryproto labels.txt img.jpg" << std::endl;
+  //  return 1;
+  //}
 
   ::google::InitGoogleLogging(argv[0]);
 
-  string model_file   = argv[1];
-  string trained_file = argv[2];
-  string mean_file    = argv[3];
-  string label_file   = argv[4];
+  string model_file = "models/bvlc_reference_caffenet/deploy.prototxt";// argv[1];
+  string trained_file = "models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel";//argv[2];
+  string mean_file = "data/ilsvrc12/imagenet_mean.binaryproto";//argv[3];
+  string label_file = "data/ilsvrc12/synset_words.txt"; // argv[4];
+
+  //string model_file = "examples/cifar10/cifar10_quick_solver.prototxt";// argv[1];
+  //string trained_file = "examples/cifar10/cifar10_quick_iter_4000.caffemodel";//argv[2];
+  //string mean_file = "examples/cifar10/mean.binaryproto";//argv[3];
+  //string label_file = "data/ilsvrc12/synset_words.txt"; // argv[4];
   Classifier classifier(model_file, trained_file, mean_file, label_file);
 
-  string file = argv[5];
+//  string file = argv[5];
+  string file = "examples/images/cat.jpg";
 
   std::cout << "---------- Prediction for "
             << file << " ----------" << std::endl;
@@ -257,6 +263,7 @@ int main(int argc, char** argv) {
     std::cout << std::fixed << std::setprecision(4) << p.second << " - \""
               << p.first << "\"" << std::endl;
   }
+  return 0;
 }
 #else
 int main(int argc, char** argv) {
